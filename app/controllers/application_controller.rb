@@ -5,7 +5,7 @@ class ApplicationController < ActionController::API
    end
 
    def encode_token(user)
-     JWT.encode(user_payload(user), "Bob", 'HS256')
+     JWT.encode(user_payload(user), secret, 'HS256')
    end
 
    def token
@@ -17,7 +17,7 @@ class ApplicationController < ActionController::API
    end
 
    def decoded_token
-     JWT.decode(token, "Bob", true, { algorithm: 'HS256' })
+     JWT.decode(token, secret, true, { algorithm: 'HS256' })
    end
 
    def current_user

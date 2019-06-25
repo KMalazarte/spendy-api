@@ -1,7 +1,6 @@
 class AuthController < ApplicationController
 
   def login
-    byebug
     user = User.find_by(username: params["username"])
 
   is_authenticated = user.authenticate(params["password"])
