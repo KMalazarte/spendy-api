@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  post '/login', to: "auth#login"
-  post '/signup', to: "users#create"
+  resources :users, only: [:create]
+  post '/login', to: "auth#create"
   get '/profile', to: "users#profile"
 
 
