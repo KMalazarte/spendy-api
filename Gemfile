@@ -49,3 +49,5 @@ gem "jwt", "~> 2.2"
 gem 'active_model_serializers'
 
 gem "figaro"
+
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
