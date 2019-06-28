@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/profile', to: "users#profile"
   # get '/users/:username/purchases', to: "purchases#show"
   post '/purchases', to: "purchases#create"
+  get '/purchases', to: "purchases#index"
 
 
 end
