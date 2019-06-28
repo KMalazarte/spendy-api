@@ -1,14 +1,20 @@
 class UsersController < ApplicationController
   skip_before_action :authorized, only: [:create]
 
-  def index
-    @all = User.all
-    
-  end
+  # def index
+  #   @all = User.all
+  #
+  # end
 
   def profile
     render json: { user: UserSerializer.new(current_user()) }, status: :accepted
   end
+
+  def show
+    @user = User.find(params[:id])
+    render json: {user: @user}
+  end
+
 
   def create
     @user = User.create(user_params)

@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_06_25_213411) do
     t.decimal "out_of_pocket"
     t.decimal "actual_paid"
     t.string "payment_method"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_06_25_213411) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
+    t.string "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

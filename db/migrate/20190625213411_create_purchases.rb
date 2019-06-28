@@ -8,7 +8,7 @@ class CreatePurchases < ActiveRecord::Migration[5.2]
       t.decimal :out_of_pocket
       t.decimal :actual_paid
       t.string :payment_method
-      t.belongs_to :user, foreign_key: true
+      t.integer :user_id
 
       t.timestamps
     end
