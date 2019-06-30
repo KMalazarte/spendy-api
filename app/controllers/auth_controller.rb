@@ -1,5 +1,5 @@
 class AuthController < ApplicationController
-  skip_before_action :authorized, only: [:create]
+  # skip_before_action :authorized, only: [:create]
 
   def create # POST /login
     @user = User.find_by(username: user_login_params[:username])
@@ -20,17 +20,3 @@ class AuthController < ApplicationController
   end
 
 end
-  #
-  # def login
-  #   user = User.find_by(username: params["username"])
-  #
-  # is_authenticated = user.authenticate(params["password"])
-  #   if is_authenticated
-  #     render json: { token: encode_token(user) }
-  #   else
-  #     render json: { error: "Wrong username or password" }
-  #   end
-  #
-  # end
-
-# end
