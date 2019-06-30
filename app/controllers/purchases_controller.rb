@@ -7,12 +7,11 @@ class PurchasesController < ApplicationController
   end
 
   def show
-    @purchase = Purchase.select{ |r| r[:user_id] == params[:id].to_i }
+    @purchase = Purchase.select{ |purchase| purchase[:user_id] == params[:user_id].to_i }
     render json: {purchase: @purchase}
   end
 
   def create
-    # byebug
     @purchase = Purchase.create(purchase_params)
     render json: {purchase: @purchase}
   end

@@ -36,7 +36,7 @@ rachel = User.create(
   avatar: "http://www.myfreephotoshop.com/wp-content/uploads/2013/12/186.jpg"
 )
 
-first_purchase = Purchase.create(
+user_1_first_purchase = Purchase.create(
     date: "June 24,2019",
     name: "Stella",
     category: "Beer",
@@ -47,7 +47,7 @@ first_purchase = Purchase.create(
     user_id: 1
   )
 
-second_purchase = Purchase.create(
+user_1_second_purchase = Purchase.create(
     date: "June 28,2019",
     name: "Gas",
     category: "Gas",
@@ -59,7 +59,7 @@ second_purchase = Purchase.create(
   )
 
 
-third_purchase = Purchase.create(
+user_1_third_purchase = Purchase.create(
   date: "June 29,2019",
   name: "Eggs",
   category: "Groceries",
@@ -68,4 +68,26 @@ third_purchase = Purchase.create(
   actual_paid: 2.50,
   payment_method: "Credit",
   user_id: 1
+)
+
+user_2_first_purchase = Purchase.create(
+  date: "June 21,2019",
+  name: "Bag",
+  category: "Accessories",
+  place_of_purchase: "LV",
+  out_of_pocket: 1000,
+  actual_paid: 1000,
+  payment_method: "Credit",
+  user_id: 2
+)
+
+user_2_second_purchase = Purchase.create(
+  date: "June 24,2019",
+  name: "Coffee",
+  category: "Food",
+  place_of_purchase: "Starbucks",
+  out_of_pocket: 5.00,
+  actual_paid: 5.00,
+  payment_method: "Credit",
+  user_id: 2
 )
