@@ -41,8 +41,8 @@ user_1_first_purchase = Purchase.create(
     name: "Stella",
     category: "Beer",
     place_of_purchase: "bar",
-    out_of_pocket: 20,
-    actual_paid: 10,
+    out_of_pocket: 20.00,
+    actual_paid: 10.00,
     payment_method: "Credit",
     user_id: 1
   )
@@ -52,8 +52,8 @@ user_1_second_purchase = Purchase.create(
     name: "Gas",
     category: "Gas",
     place_of_purchase: "Sunoco",
-    out_of_pocket: 40,
-    actual_paid: 40,
+    out_of_pocket: 40.00,
+    actual_paid: 40.00,
     payment_method: "Cash",
     user_id: 1
   )
