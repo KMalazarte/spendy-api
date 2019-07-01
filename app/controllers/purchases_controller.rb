@@ -7,13 +7,23 @@ class PurchasesController < ApplicationController
   end
 
   def show
-    @purchase = Purchase.select{ |purchase| purchase[:user_id] == params[:user_id].to_i }
-    render json: {purchase: @purchase}
+    @purchases = Purchase.select{ |purchase| purchase[:user_id] == params[:user_id].to_i }
+    render json: {purchase: @purchases}
+  end
+
+  def indiv
+    @purchase = Purchase.select{ |purchase| purchase[:id] == params[:purchase_id].to_i }
+    render json: @purchase
   end
 
   def create
     @purchase = Purchase.create(purchase_params)
     render json: {purchase: @purchase}
+  end
+
+  def delete
+    @purchase = Purchase.find(params[:purchase_id])
+    @purchase.destroy
   end
 
   private
