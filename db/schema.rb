@@ -16,24 +16,27 @@ ActiveRecord::Schema.define(version: 2019_06_25_213411) do
   enable_extension "plpgsql"
 
   create_table "purchases", force: :cascade do |t|
-    t.date "date"
+    t.string "date"
     t.string "name"
     t.string "category"
     t.string "place_of_purchase"
     t.decimal "out_of_pocket"
     t.decimal "actual_paid"
     t.string "payment_method"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_purchases_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
     t.string "avatar"
+    t.integer "monthly_take_home"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "purchases", "users"
 end
