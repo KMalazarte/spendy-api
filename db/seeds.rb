@@ -54,7 +54,7 @@ jane = User.create(
 )
 
 user_1_first_purchase = Purchase.create(
-    date: "June 20,2019",
+    date: "7-1-19",
     name: "Stella",
     category: "Beer",
     place_of_purchase: "bar",
@@ -65,7 +65,7 @@ user_1_first_purchase = Purchase.create(
   )
 
 user_1_second_purchase = Purchase.create(
-    date: "June 28,2019",
+    date: "7-2-19",
     name: "Gas",
     category: "Gas",
     place_of_purchase: "Sunoco",
@@ -77,7 +77,7 @@ user_1_second_purchase = Purchase.create(
 
 
 user_1_third_purchase = Purchase.create(
-  date: "June 29,2019",
+  date: "7-1-19",
   name: "Eggs",
   category: "Groceries",
   place_of_purchase: "Stop & Shop",
@@ -88,7 +88,7 @@ user_1_third_purchase = Purchase.create(
 )
 
 user_2_first_purchase = Purchase.create(
-  date: "June 21,2019",
+  date: "7-1-19",
   name: "Bag",
   category: "Accessories",
   place_of_purchase: "LV",
@@ -99,7 +99,7 @@ user_2_first_purchase = Purchase.create(
 )
 
 user_2_second_purchase = Purchase.create(
-  date: "June 24,2019",
+  date: "7-1-19",
   name: "Coffee",
   category: "Food",
   place_of_purchase: "Starbucks",
@@ -110,7 +110,7 @@ user_2_second_purchase = Purchase.create(
 )
 
 user_2_third_purchase = Purchase.create(
-  date: "June 24,2019",
+  date: "7-3-19",
   name: "Gucci Slides",
   category: "Shoes",
   place_of_purchase: "Gucci",
@@ -121,7 +121,7 @@ user_2_third_purchase = Purchase.create(
 )
 
 user_3_first_purchase = Purchase.create(
-  date: "June 24,2019",
+  date: "7-4-19",
   name: "Spam Sandwich",
   category: "Food",
   place_of_purchase: "Aloha Cafe",
@@ -132,7 +132,7 @@ user_3_first_purchase = Purchase.create(
 )
 
 user_3_second_purchase = Purchase.create(
-  date: "June 24,2019",
+  date: "7-4-19",
   name: "Oversize Sweatshirt",
   category: "Clothes",
   place_of_purchase: "PacSun",
