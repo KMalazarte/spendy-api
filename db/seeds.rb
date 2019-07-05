@@ -56,7 +56,7 @@ jane = User.create(
 user_1_first_purchase = Purchase.create(
     date: "7-1-19",
     name: "Stella",
-    category: "Beer",
+    category: "Booze/Night Out",
     place_of_purchase: "bar",
     out_of_pocket: 20.00,
     actual_paid: 10.00,
@@ -67,7 +67,7 @@ user_1_first_purchase = Purchase.create(
 user_1_second_purchase = Purchase.create(
     date: "7-2-19",
     name: "Gas",
-    category: "Gas",
+    category: "Transportation/ Gas",
     place_of_purchase: "Sunoco",
     out_of_pocket: 40.00,
     actual_paid: 40.00,
@@ -87,10 +87,22 @@ user_1_third_purchase = Purchase.create(
   user_id: 1
 )
 
+user_1_fourth_purchase = Purchase.create(
+  date: "7-4-19",
+  name: "Ani Ramen",
+  category: "Eating Out",
+  place_of_purchase: "Ani Ramen",
+  out_of_pocket: 150.67,
+  actual_paid: 35.60,
+  payment_method: "Credit",
+  user_id: 1
+)
+
+
 user_2_first_purchase = Purchase.create(
   date: "7-1-19",
   name: "Bag",
-  category: "Accessories",
+  category: "Clothes/Accessories",
   place_of_purchase: "LV",
   out_of_pocket: 1000,
   actual_paid: 1000,
@@ -101,10 +113,10 @@ user_2_first_purchase = Purchase.create(
 user_2_second_purchase = Purchase.create(
   date: "7-1-19",
   name: "Coffee",
-  category: "Food",
+  category: "Eating Out",
   place_of_purchase: "Starbucks",
-  out_of_pocket: 5.00,
-  actual_paid: 5.00,
+  out_of_pocket: 5.25,
+  actual_paid: 5.25,
   payment_method: "Credit",
   user_id: 2
 )
@@ -112,7 +124,7 @@ user_2_second_purchase = Purchase.create(
 user_2_third_purchase = Purchase.create(
   date: "7-3-19",
   name: "Gucci Slides",
-  category: "Shoes",
+  category: "Clothes/Accessories",
   place_of_purchase: "Gucci",
   out_of_pocket: 150,
   actual_paid: 150,
@@ -123,7 +135,7 @@ user_2_third_purchase = Purchase.create(
 user_3_first_purchase = Purchase.create(
   date: "7-4-19",
   name: "Spam Sandwich",
-  category: "Food",
+  category: "Eating Out",
   place_of_purchase: "Aloha Cafe",
   out_of_pocket: 5.00,
   actual_paid: 5.00,
@@ -134,7 +146,7 @@ user_3_first_purchase = Purchase.create(
 user_3_second_purchase = Purchase.create(
   date: "7-4-19",
   name: "Oversize Sweatshirt",
-  category: "Clothes",
+  category: "Clothes/Accessories",
   place_of_purchase: "PacSun",
   out_of_pocket: 60,
   actual_paid: 60,
