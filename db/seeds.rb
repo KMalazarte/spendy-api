@@ -57,9 +57,9 @@ user_1_first_purchase = Purchase.create(
     date: "7-1-19",
     name: "Stella",
     category: "Booze/Night Out",
-    place_of_purchase: "bar",
+    place_of_purchase: "Murphy's Pub",
     out_of_pocket: 20.00,
-    actual_paid: 10.00,
+    actual_paid: 20.00,
     payment_method: "Credit",
     user_id: 1
   )
@@ -98,6 +98,49 @@ user_1_fourth_purchase = Purchase.create(
   user_id: 1
 )
 
+user_1_fifth_purchase = Purchase.create(
+  date: "7-4-19",
+  name: "Nike React Presto",
+  category: "Clothes/Accessories",
+  place_of_purchase: "Nike.com",
+  out_of_pocket: 120.00,
+  actual_paid: 120.00,
+  payment_method: "Credit",
+  user_id: 1
+)
+
+user_1_sixth_purchase = Purchase.create(
+  date: "7-14-19",
+  name: "Hotel ",
+  category: "Flights/ Hotels",
+  place_of_purchase: "Orbitz.com",
+  out_of_pocket: 650.89,
+  actual_paid: 650.89,
+  payment_method: "Credit",
+  user_id: 1
+)
+
+user_1_seventh_purchase = Purchase.create(
+  date: "7-10-19",
+  name: "Flowers",
+  category: "Gifts",
+  place_of_purchase: "Tony's Flower Shop",
+  out_of_pocket: 25.45,
+  actual_paid: 25.45,
+  payment_method: "Credit",
+  user_id: 1
+)
+
+user_1_eighth_purchase = Purchase.create(
+  date: "7-10-19",
+  name: "Avalon Board Game",
+  category: "Entertainment",
+  place_of_purchase: "Amazon",
+  out_of_pocket: 15.32,
+  actual_paid: 15.32,
+  payment_method: "Credit",
+  user_id: 1
+)
 
 user_2_first_purchase = Purchase.create(
   date: "7-1-19",
