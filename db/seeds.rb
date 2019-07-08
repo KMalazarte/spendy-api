@@ -54,7 +54,7 @@ jane = User.create(
 )
 
 user_1_first_purchase = Purchase.create(
-    date: "7-1-19",
+    date: "2019-07-01",
     name: "Stella",
     category: "Booze/Night Out",
     place_of_purchase: "Murphy's Pub",
@@ -65,7 +65,7 @@ user_1_first_purchase = Purchase.create(
   )
 
 user_1_second_purchase = Purchase.create(
-    date: "7-2-19",
+    date: "2019-07-02",
     name: "Gas",
     category: "Transportation/ Gas",
     place_of_purchase: "Sunoco",
@@ -77,7 +77,7 @@ user_1_second_purchase = Purchase.create(
 
 
 user_1_third_purchase = Purchase.create(
-  date: "7-1-19",
+  date: "2019-07-03",
   name: "Eggs",
   category: "Groceries",
   place_of_purchase: "Stop & Shop",
@@ -88,7 +88,7 @@ user_1_third_purchase = Purchase.create(
 )
 
 user_1_fourth_purchase = Purchase.create(
-  date: "7-4-19",
+  date: "2019-07-05",
   name: "Ani Ramen",
   category: "Eating Out",
   place_of_purchase: "Ani Ramen",
@@ -99,7 +99,7 @@ user_1_fourth_purchase = Purchase.create(
 )
 
 user_1_fifth_purchase = Purchase.create(
-  date: "7-4-19",
+  date: "2019-07-02",
   name: "Nike React Presto",
   category: "Clothes/Accessories",
   place_of_purchase: "Nike.com",
@@ -110,7 +110,7 @@ user_1_fifth_purchase = Purchase.create(
 )
 
 user_1_sixth_purchase = Purchase.create(
-  date: "7-14-19",
+  date: "2019-07-06",
   name: "Flight to Budapest",
   category: "Flights/ Hotels",
   place_of_purchase: "Orbitz.com",
@@ -121,7 +121,7 @@ user_1_sixth_purchase = Purchase.create(
 )
 
 user_1_seventh_purchase = Purchase.create(
-  date: "7-10-19",
+  date: "2019-07-08",
   name: "Flowers",
   category: "Gifts",
   place_of_purchase: "Tony's Flower Shop",
@@ -132,7 +132,7 @@ user_1_seventh_purchase = Purchase.create(
 )
 
 user_1_eighth_purchase = Purchase.create(
-  date: "7-10-19",
+  date: "2019-07-08",
   name: "Avalon Board Game",
   category: "Entertainment",
   place_of_purchase: "Amazon",
