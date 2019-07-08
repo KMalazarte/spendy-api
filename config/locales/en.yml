@@ -31,8 +31,3 @@
 
 en:
   hello: "Hello world"
-
-en:
-  date:
-    formats:
-      default: "%m/%d/%Y"
