@@ -111,7 +111,7 @@ user_1_fifth_purchase = Purchase.create(
 
 user_1_sixth_purchase = Purchase.create(
   date: "7-14-19",
-  name: "Hotel ",
+  name: "Flight to Budapest",
   category: "Flights/ Hotels",
   place_of_purchase: "Orbitz.com",
   out_of_pocket: 650.89,
@@ -139,6 +139,36 @@ user_1_eighth_purchase = Purchase.create(
   out_of_pocket: 15.32,
   actual_paid: 15.32,
   payment_method: "Credit",
+  user_id: 1
+)
+
+user_1_first_monthly = Monthly.create(
+  name: "Netflix",
+  amount: 12.99,
+  user_id: 1
+)
+
+user_1_second_monthly = Monthly.create(
+  name: "Car Payment",
+  amount: 370.00,
+  user_id: 1
+)
+
+user_1_third_monthly = Monthly.create(
+  name: "Car Insurance",
+  amount: 126.00,
+  user_id: 1
+)
+
+user_1_fourth_monthly = Monthly.create(
+  name: "Gym Membership",
+  amount: 15.94,
+  user_id: 1
+)
+
+user_1_fifth_monthly = Monthly.create(
+  name: "Cellphone Bill",
+  amount: 57.11,
   user_id: 1
 )
 
