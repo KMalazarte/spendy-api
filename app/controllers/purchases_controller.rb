@@ -16,6 +16,12 @@ class PurchasesController < ApplicationController
     render json: @purchase
   end
 
+  def edit
+    @purchase = Purchase.find(params[:purchase_id])
+    @purchase.update(purchase_params)
+    render json: @purchase
+  end
+
   def create
     @purchase = Purchase.create(purchase_params)
     render json: {purchase: @purchase}
