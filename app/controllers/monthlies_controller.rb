@@ -20,6 +20,12 @@ class MonthliesController < ApplicationController
     render json: {monthly: @monthly}
   end
 
+  def edit
+    @monthly = Monthly.find(params[:monthly_id])
+    @monthly.update(monthly_params)
+    render json: @monthly
+  end
+
   def delete
     @monthly = Monthly.find(params[:monthly_id])
     @monthly.destroy

@@ -10,8 +10,14 @@ class UsersController < ApplicationController
     render json: { user: UserSerializer.new(current_user()) }, status: :accepted
   end
 
+  def edit
+    @user = User.find(params[:user_id])
+    @user.update(user_params)
+    render json: @user
+  end
+
   def show
-    @user = User.find(params[:id])
+    @user = User.find(params[:user_id])
     render json: {user: @user}
   end
 
