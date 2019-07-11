@@ -4,7 +4,7 @@
   post '/login', to: "auth#create"
   get '/profile', to: "users#profile"
   get '/profile/:user_id', to: "users#show"
-
+  patch '/profile/:user_id', to: "users#edit"
 
   post '/purchases', to: "purchases#create"
   get '/:user_id/purchases', to: "purchases#show"
