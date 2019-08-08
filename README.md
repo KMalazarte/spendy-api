@@ -1,24 +1,11 @@
-# README
+Users can add, edit and delete purchases. All these purchases are color coded and the sum of all purchases for a certain category is shown on top. If the table showing all the categories is clicked, a graph appears.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purchase rows are sortable by clicking any of the columns names.
 
-Things you may want to cover:
+Recurring monthly expenses can be added, edited, or deleted.
 
-* Ruby version
+Monthly take home is also editable.
 
-* System dependencies
+User Stats are updated accordingly showing how much has been spent and how much is left before going over budget.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Front End : https://github.com/KMalazarte/Mod_5_Money_Tracker
