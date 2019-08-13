@@ -8,4 +8,6 @@ Monthly take home is also editable.
 
 User Stats are updated accordingly showing how much has been spent and how much is left before going over budget.
 
+Demo: https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be
+
 Front End : https://github.com/KMalazarte/Mod_5_Money_Tracker
